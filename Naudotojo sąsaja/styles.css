@@ -1,0 +1,156 @@
+body {
+  background: url("https://github.com/Sasnauskaite/BBD/blob/main/background.png?raw=true");
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+  padding-right: 50px;
+  padding-top: 0px;;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.858);
+  margin: 0 auto; 
+}
+
+h1 {
+  text-align: center;
+  color: #E84F7F; /* Primary color */
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: Geneva;
+}
+
+p {
+  text-align: center;
+  color: #96143d; /* Secondary color */
+  font-family: 'Lucida Sans';
+  font-weight: bolder;
+}
+
+.box-code-container {
+  margin-bottom: 15px;
+}
+
+.box-code-container label {
+  display: block; 
+  margin-bottom: 5px;
+  color: #212529;
+  font-weight: bold;
+}
+
+.box-code-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-code-input input {
+  width: calc(100% / 7); 
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+input[type="text"]::-webkit-inner-spin-button,
+input[type="text"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  min-height: 20px;
+  height: 50px;
+  resize: vertical;
+}
+
+input {
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #ff8daf; /* Accent color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e84f7f;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto; 
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.858);
+  margin: 0; 
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  position: relative;
+}
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  backdrop-filter: blur(5px);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-backdrop.show {
+  display: block;
+}

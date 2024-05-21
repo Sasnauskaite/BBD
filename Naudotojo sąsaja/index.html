@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles&Smiles</title>
+    <!-- 
+        Change the href="path to index.html"
+        Use the actual path to the place in your computer where your index.html file is stored 
+        Example of the path:
+        "C:\Users\index.html"
+    -->
+    <link rel="stylesheet" href="path to index.html"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Miles&Smiles</h1>
+        <p>Stay connected, share smiles across all the miles!</p>
+        <form action="#">
+            <div class="box-code-container">
+                <label for="boxCode">Box Code:</label>
+                <div class="box-code-input">
+                    <input type="text" id="boxCode1" name="boxCode1" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode2" name="boxCode2" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode3" name="boxCode3" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode4" name="boxCode4" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode5" name="boxCode5" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode6" name="boxCode6" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                    <input type="text" id="boxCode7" name="boxCode7" maxlength="1" pattern="[A-Za-z0-9ĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="" onclick="focusFirstBox()" onkeyup="nextBox(event)" onkeydown="if (event.keyCode === 8) { prevBox(event) } else if (event.keyCode !== 8) { replaceWhenFull(event)}" onkeypress="return validateInput(event, true)">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+            </div>
+            <div class="input-group2">
+                <label for="sender">Sender:</label>
+                <input id="sender" name="sender" pattern="[A-Za-zĄČĘĖĮŠŲŪŽąčęėįšųūž]" placeholder="Input your name here" onkeypress="return validateInput(event, false)"></input>
+            </div>
+            <div class="sendButton">
+                <button type="button" onclick="sendMessage()">Send Smile</button>
+            </div>
+        </form>   
+    </div>
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    <div id="modalBackdrop" class="modal-backdrop"></div>
+    <!-- 
+        Change the src="path to script.js" 
+        Use the actual path to the place in your computer where your script.js file is stored 
+        Example of the path:
+        "C:\Users\script.js"
+    -->
+  <script src="path to script.js"></script>
+</body>
+</html>
